@@ -1,0 +1,73 @@
+git:
+  diff-tool: vscode
+  display-name: "Your Name"
+  email: "your@email.ext"
+windows:
+  language: "en-US"
+  region: "da-DK"
+  fontSize: 14
+  cursorSpeed: 10
+  notifications: false
+  timeFormat:
+    shortTime: "HH:mm"
+    longTime: "HH:mm:ss"
+packages:
+  choco:
+    - name: "7zip"
+      install: true
+      params:
+    - name: "git"
+      install: true
+      params:
+    - name: "gitextensions"
+      install: true
+      params:
+    - name: "gh"
+      install: true
+      params:
+    - name: "brave"
+      install: true
+      params:
+    - name: "vscode"
+      install: true
+      params:
+    - name: "python"
+      install: true
+      params:
+    - name: "notepadplusplus"
+      install: true
+      params:
+    - name: "notepadreplacer"
+      install: true
+      params: "/NOTEPAD:C:\\Program Files\\Notepad++\\notepad++.exe"
+    - name: "podman-desktop"
+      install: true
+      params:
+  winget:
+    - name: "Microsoft.WindowsTerminal.Preview"
+      install: true
+
+extensions:
+  vscode:
+    - name: "git-extension-pack"
+      id: "donjayamanne.git-extension-pack"
+    - name: "copilot"
+      id: "github.copilot"
+    - name: "copilot-chat"
+      id: "github.copilot-chat"
+    - name: "git-graph"
+      id: "mhutchie.git-graph"
+    - name: "vscode-kubernetes-tools"
+      id: "ms-kubernetes-tools.vscode-kubernetes-tools"
+    - name: "vscode-pylance"
+      id: "ms-python.vscode-pylance"
+    - name: "powershell"
+      id: "ms-vscode.powershell"
+    - name: "markdown-all-in-one"
+      id: "yzhang.markdown-all-in-one"
+
+k8s:
+  clusters:
+    - Subscription: "john-shared-aks-prd"
+      ResourceGroup: "doe-aks-prd"
+      ClusterName: "john-doe-prd"

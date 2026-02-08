@@ -41,7 +41,10 @@ packages:
       install: true
       params: "/NOTEPAD:C:\\Program Files\\Notepad++\\notepad++.exe"
     - name: "podman-desktop"
-      install: true
+      install: false
+      params:
+    - name: "docker-desktop"
+      install: false
       params:
   winget:
     - name: "Microsoft.WindowsTerminal.Preview"
@@ -65,6 +68,8 @@ extensions:
       id: "ms-vscode.powershell"
     - name: "markdown-all-in-one"
       id: "yzhang.markdown-all-in-one"
+    - name: "WSL"
+      id: "ms-vscode-remote.remote-wsl"
 
 k8s:
   clusters:

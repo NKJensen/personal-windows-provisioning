@@ -46,6 +46,9 @@ packages:
     - name: "docker-desktop"
       install: false
       params:
+    - name: "mc"
+      install: true
+      params:
   winget:
     - name: "Microsoft.WindowsTerminal.Preview"
       install: true

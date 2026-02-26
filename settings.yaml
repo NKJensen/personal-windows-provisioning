@@ -52,6 +52,13 @@ packages:
     - name: "mobaxterm"
       install: true
       params:
+    - name: "msys2"
+      install: true
+      params:
+    - name: "meld"
+      install: true
+      params:
+      
   winget:
     - name: "Microsoft.WindowsTerminal.Preview"
       install: true

@@ -52,7 +52,7 @@ packages:
     - name: "mobaxterm"
       install: true
       params:
-    - name: "msys2"
+    - name: "rufus"
       install: true
       params:
     - name: "meld"

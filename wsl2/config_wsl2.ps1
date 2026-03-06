@@ -14,10 +14,8 @@ Set-StrictMode -Version 2.0
 
 # By nkj@internetgruppen.dk
 try {
-    $cmd = "wsl --install --no-launch -d Ubuntu --web-download"
-    Invoke-Expression $cmd -OutVariable output
-    logFileConsole $output
-}
+    $output = & wsl --install -d Ubuntu --no-launch --web-download 2>&1
+    logFileConsole $output}
 Catch
 {
     logFileConsole $_.Exception | format-list -force
